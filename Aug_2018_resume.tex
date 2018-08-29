@@ -1,0 +1,119 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage{enumitem}
+\usepackage{marvosym}
+\usepackage{geometry}
+\usepackage{multicol}
+\setlength{\multicolsep}{2pt}
+\usepackage{fontspec} 
+\usepackage{xunicode,xltxtra,url,parskip} 
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo} 			
+\usepackage{supertabular} 			
+\usepackage{titlesec}	
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+\setmainfont[
+SmallCapsFont = Roboto-Medium.ttf,
+BoldFont = Roboto-Bold.ttf,
+ItalicFont = Roboto-MediumItalic.ttf]
+{Roboto-Light.ttf}
+
+\titleformat{\section}{\Large\scshape}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+
+\geometry{
+ left=25mm,
+ right=25mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+
+%--------------------BEGIN DOCUMENT----------------------
+\begin{document}
+\pagestyle{empty} % non-numbered pages
+\font\fb=''[cmr10]'' %for use with \LaTeX command
+
+
+%--------------------TITLE-------------
+\par{\centering
+		{\huge\textsc{Timothy} \textsc{Martin}
+	}\par}
+	
+	\par{\centering
+		{\footnotesize\\{70 E. 10th Street, Apt 9R | NY, NY 10003}& \\\href{mailto:timothymartin76@gmail.com}{timothymartin76@gmail.com} | 917.826.6146
+	}\par}
+
+
+%--------------------SECTIONS-----------------------------------
+
+%Section: Profile
+\section{Profile}
+\small {Leader in data analytics strategy with expertise in directing cross-functional analytics teams that provide technical solutions to core business issues and help staff make informed decisions quickly. Specific background with agencies governing construction, infrastructure, and tech projects in NYC. Expert in simplifying and communicating complex information and methodologies. Highly skilled in numerous enterprise and open-source technologies.
+} 
+%Section: Experience 
+\section{Experience}
+\begin{tabular}{r|p{13cm}}
+ {Apr 2016} & \textsc{Chief Analytics Officer} | NYC Department of Buildings, New York, NY \\{Present}&\footnotesize{Provide strategic technical leadership in the development of analytics strategy and implementation. Use data science and machine learning to improve performance, operations, and transparency while decreasing risk and mitigating cost. Inform statistical approaches, analytics best practices, effective quality control, and strategies for ensuring reproducibility and accuracy of results. Build automated digital products to monitor and assess NYC construction and development trends in real-time. Key accomplishments include:}
+ \begin{itemize}
+		\item Reduced inspection response time by 75\% through algorithm-based clustered routing
+		\item Administered \$5MM  contract for enterprise analytics and data warehouse restructuring
+		\item Deployed construction accident predictive model and developed list of top 100 critical sites 
+		\item Led GIS effort post-Hurricane Maria in Puerto Rico performing over 5K structural assessments
+		\item Managed Open Data requirements by editing and publishing 20+ datasets for public consumption
+		\item Provided keynote addresses and participated in industry-focused panels and roundtables
+		\item Developed web-based Analytics User Guides to teach end users how to analyze business data
+		\item Launched real-time major construction tracking application for industry and public use	
+	\end{itemize}\vspace{-1.6em}\\\multicolumn{2}{c}{} \\{Jul 2014} & \textsc{Business Intelligence Manager} | NYC 311, New York, NY \\{Apr 2016}&\footnotesize{Managed a team of analysts responsible for development and implementation of BI reports, KPIs, dashboards, and data models. Performed data mining, statistical analysis, and predictive modeling of complaint data, customer behavior, demographics, and performance indicators. Created interactive data visualizations and mapping applications. Implemented customer surveys and developed scripts for survey analysis. Supported ETL and API processes. Presented monthly high-level metrics and analysis to executive staff.}
+\\\multicolumn{2}{c}{} \\{Jan 2009} & \textsc{WSI Program Manager} | NYC DEP, New York, NY \\{Jul 2014}&\footnotesize{ Facilitated design of a \$12MM early warning system, including development of a real-time, IOT platform for remote monitoring. Developed and managed KPIs to evaluate program operations, performance, and sustainability. Implemented large-scale, scientific data analytics applications. Managed data consolidation and implementation of specialized dashboards. Presented research at industry conferences.}\\\multicolumn{2}{c}{} \\{Oct 2005} & \textsc{Research Scientist} | NYC DEP, New York, NY \\{Jan 2009}&\footnotesize{Analyzed environmental data for public health implications. Programmed and managed database applications and technical reporting. Developed and managed a pharmaceutical contaminant monitoring plan for NYC source water. Published peer-reviewed research. Presented findings at industry conferences.}
+\end{tabular}
+
+
+%Section: Previous Positions
+\section{Previous Positions}
+ \begin{itemize}
+		\item\textsc{Business Operations Analyst} | L'Occitane en Provence, New York, NY (2003-2004)
+		\item\textsc{Environmental Scientist} | SOTA Environmental Technology, San Diego, CA (2001-2003)
+		\item\textsc{Agroforesty Volunteer} | US Peace Corps, Malawi, Africa (1999-2001)
+	\end{itemize}\vspace{-0.5em}
+
+
+%Section: Technical Skills
+\section{Technical Skills}
+    \begin{multicols}{5}
+    \begin{itemize}
+        \item R
+        \item SQL
+        \item Python
+        \item R::ggplot2
+        \item R::shiny
+        \item d3.js
+        \item Tableau
+        \item OBIEE
+        \item Power BI
+        \item Carto
+        \item QGIS
+        \item Leaflet
+        \item Git
+        \item Plot.ly
+        \item HTML5
+    \end{itemize}
+    \end{multicols}
+    
+%Section: Education
+\section{Education}
+ \begin{itemize}
+		\item\textsc{MPA, Environmental Science and Policy} | Columbia University, New York, NY (2005)
+		\item\textsc{BA, Environmental Science} | Willamette University, Salem, OR (1998)
+	\end{itemize}\vspace{-0.5em}    
+\end{document}
